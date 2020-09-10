@@ -13,7 +13,7 @@ import java.util.List;
 public class Controller {
     @Autowired
     UserRepository userRepository;
-    @GetMapping("user/")
+    @GetMapping("/user")
     public List<User> getUser(){
         return userRepository.findAll();
     }
